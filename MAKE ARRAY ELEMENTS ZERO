@@ -1,0 +1,41 @@
+class Solution(object):
+    def countValidSelections(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        def canmakezero(arr, start, direction):
+            nums_copy = arr[:]
+            n = len(nums_copy)
+            curr = start
+            dir = direction
+
+            while 0 <= curr < n:
+                if nums_copy[curr] == 0:
+                    curr += dir
+                else:
+                    nums_copy[curr] -= 1
+                    dir *= -1
+                    curr += dir
+
+            return all(x == 0 for x in nums_copy)
+
+        n = len(nums)
+        valid = 0
+
+        for i in range(n):
+            if nums[i] == 0:
+                if canmakezero(nums, i, 1):
+                    valid += 1
+                if canmakezero(nums, i, -1):
+                    valid += 1
+
+        return valid
+
+
+
+
+
+
+
+
