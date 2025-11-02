@@ -62,6 +62,12 @@ If you’re new to GitHub, check out this tutorial to learn how to fork, clone, 
 ---
 
 ## 🌟 Contribute and Grow
+**Name** | ADHVI GL|
+| **Semester** | 3RD |
+| **USN** | 1WN24CS014 |
+| **College Email** | adhvi.cs24@bmsce.ac.in |
+| **LeetCode Profile** | [Your LeetCode username/profile link](https://leetcode.com/u/adhvigl/) |
+
 
 Keep solving, keep sharing, and let’s grow together — one bit at a time 💡  
 Feel free to explore other members’ solutions to learn different approaches.
